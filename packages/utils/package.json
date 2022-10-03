@@ -1,6 +1,6 @@
 {
-  "name": "@pcs/utils",
-  "version": "0.0.0",
+  "name": "@eo-pcs/utils",
+  "version": "1.0.0",
   "license": "ISC",
   "sideEffects": false,
   "main": "./index.ts",
@@ -25,14 +25,14 @@
     "clean:deps": "rimraf node_modules"
   },
   "dependencies": {
-    "@pcs/constant": "workspace:*",
+    "@eo-pcs/constant": "workspace:*",
     "@pnpm/find-workspace-dir": "^4.0.2",
     "@pnpm/find-workspace-packages": "^4.0.39",
     "@pnpm/logger": "^4.0.0",
     "@yarnpkg/core": "^4.0.0-rc.14"
   },
   "devDependencies": {
-    "@pcs/ts-config": "workspace:*",
+    "@eo-pcs/ts-config": "workspace:*",
     "tsup": "^6.2.3"
   },
   "engines": {

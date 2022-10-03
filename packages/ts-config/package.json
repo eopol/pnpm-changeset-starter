@@ -1,5 +1,5 @@
 {
-  "name": "@pcs/ts-config",
+  "name": "@eo-pcs/ts-config",
   "version": "0.0.0",
   "private": true,
   "license": "ISC",

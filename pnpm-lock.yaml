@@ -7,7 +7,7 @@ importers:
       '@changesets/cli': 2.24.4
       '@commitlint/cli': 17.1.2
       '@commitlint/config-conventional': 17.1.0
-      '@pcs/eslint-config': workspace:*
+      '@eo-pcs/eslint-config': workspace:*
       '@types/node': 18.7.18
       commitizen: 4.2.5
       cz-conventional-changelog: 3.3.0
@@ -22,7 +22,7 @@ importers:
       '@changesets/cli': 2.24.4
       '@commitlint/cli': 17.1.2
       '@commitlint/config-conventional': 17.1.0
-      '@pcs/eslint-config': link:packages/eslint-config
+      '@eo-pcs/eslint-config': link:packages/eslint-config
       '@types/node': 18.7.18
       commitizen: 4.2.5
       cz-conventional-changelog: 3.3.0
@@ -36,10 +36,10 @@ importers:
 
   packages/constant:
     specifiers:
-      '@pcs/ts-config': workspace:*
+      '@eo-pcs/ts-config': workspace:*
       tsup: ^6.2.3
     devDependencies:
-      '@pcs/ts-config': link:../ts-config
+      '@eo-pcs/ts-config': link:../ts-config
       tsup: 6.2.3
 
   packages/eslint-config:
@@ -64,21 +64,21 @@ importers:
 
   packages/utils:
     specifiers:
-      '@pcs/constant': workspace:*
-      '@pcs/ts-config': workspace:*
+      '@eo-pcs/constant': workspace:*
+      '@eo-pcs/ts-config': workspace:*
       '@pnpm/find-workspace-dir': ^4.0.2
       '@pnpm/find-workspace-packages': ^4.0.39
       '@pnpm/logger': ^4.0.0
       '@yarnpkg/core': ^4.0.0-rc.14
       tsup: ^6.2.3
     dependencies:
-      '@pcs/constant': link:../constant
+      '@eo-pcs/constant': link:../constant
       '@pnpm/find-workspace-dir': 4.0.2
       '@pnpm/find-workspace-packages': 4.0.40_mqpe3dygp5nwndiyvoyw5mchli
       '@pnpm/logger': 4.0.0
       '@yarnpkg/core': 4.0.0-rc.22
     devDependencies:
-      '@pcs/ts-config': link:../ts-config
+      '@eo-pcs/ts-config': link:../ts-config
       tsup: 6.2.3
 
 packages:

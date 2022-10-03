@@ -1,6 +1,6 @@
 {
-  "name": "@pcs/constant",
-  "version": "0.0.0",
+  "name": "@eo-pcs/constant",
+  "version": "1.0.0",
   "license": "ISC",
   "sideEffects": false,
   "main": "./index.ts",
@@ -25,7 +25,7 @@
     "clean:deps": "rimraf node_modules"
   },
   "devDependencies": {
-    "@pcs/ts-config": "workspace:*",
+    "@eo-pcs/ts-config": "workspace:*",
     "tsup": "^6.2.3"
   },
   "engines": {

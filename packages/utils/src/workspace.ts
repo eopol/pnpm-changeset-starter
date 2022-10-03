@@ -1,6 +1,6 @@
 import findWorkspaceDir from '@pnpm/find-workspace-dir'
 import findWorkspacePackages from '@pnpm/find-workspace-packages'
-import { PKG_PREFIX } from '@pcs/constant'
+import { PKG_PREFIX } from '@eo-pcs/constant'
 import type { Project } from '@pnpm/find-workspace-packages'
 
 let workspaceRoot: string

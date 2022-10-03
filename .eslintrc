@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["@pcs/eslint-config"]
+  "extends": ["@eo-pcs/eslint-config"]
 }

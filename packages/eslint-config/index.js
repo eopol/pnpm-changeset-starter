@@ -47,7 +47,7 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: '@pcs/**',
+            pattern: '@eo-pcs/**',
             group: 'external',
             position: 'after',
           },

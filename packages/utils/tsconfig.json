@@ -1,5 +1,5 @@
 {
-  "extends": "@pcs/ts-config/node16.json",
+  "extends": "@eo-pcs/ts-config/node16.json",
   "compilerOptions": {
     "resolveJsonModule": true
   },

@@ -5,7 +5,7 @@
   "fixed": [],
   "ignore": [],
   "linked": [
-    ["@pcs/*"]
+    ["@eo-pcs/*"]
   ],
   "access": "public",
   "baseBranch": "main",
