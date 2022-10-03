@@ -4,6 +4,8 @@ import { PKG_PREFIX } from '@pcs/constant'
 import type { Project } from '@pnpm/find-workspace-packages'
 
 let workspaceRoot: string
+let pkgs: Record<string, Project>
+
 export const getWorkspaceRoot = async () => {
   if (workspaceRoot) return workspaceRoot
   return (workspaceRoot = (await (findWorkspaceDir as any).default(
@@ -11,7 +13,6 @@ export const getWorkspaceRoot = async () => {
   ))!)
 }
 
-let pkgs: Record<string, Project>
 export const getWorkspacePackages = async () => {
   if (pkgs) return pkgs
   const _pkgs: Project[] = await (findWorkspacePackages as any).default(
