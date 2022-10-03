@@ -4,6 +4,7 @@ import { PKG_PREFIX } from '@pcs/constant'
 import type { Project } from '@pnpm/find-workspace-packages'
 
 let workspaceRoot: string
+
 let pkgs: Record<string, Project>
 
 export const getWorkspaceRoot = async () => {
