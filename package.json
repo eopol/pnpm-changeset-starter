@@ -1,0 +1,65 @@
+{
+  "name": "pnpm-changeset-starter",
+  "private": true,
+  "description": "Learn pnpm with changsets 🚀",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx simple-git-hooks",
+    "dev": "pnpm run -r --parallel build && node ./packages/utils/dist/index.mjs",
+    "build": "pnpm run -r --parallel build",
+    "clean": "run-s clean:**",
+    "clean:workspace": "pnpm run -r --parallel clean",
+    "clean:cache": "pnpm run -r --parallel clean:cache",
+    "clean:root-cache": "rimraf pnpm-lock.yaml",
+    "clean:root-deps": "rimraf node_modules",
+    "lint": "pnpm run -r --parallel lint",
+    "lint:staged": "lint-staged",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "changeset": "changeset",
+    "preversion": "echo \"Error: use @changsets/cli to version packages\" && exit 1",
+    "version-packages": "pnpm run preversion && changeset version",
+    "release": "pnpm run build && changeset publish --registry=https://registry.npmjs.com/"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.24.4",
+    "@commitlint/cli": "17.1.2",
+    "@commitlint/config-conventional": "17.1.0",
+    "@pcs/eslint-config": "workspace:*",
+    "@types/node": "18.7.18",
+    "eslint": "^8.23.1",
+    "lint-staged": "13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "simple-git-hooks": "2.8.0",
+    "typescript": "^4.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": "eslint --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+ },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eopol/pnpm-changeset-starter.git"
+  },
+  "keywords": [
+    "pnpm",
+    "changsets"
+  ],
+  "author": "admin@i7eo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eopol/pnpm-changeset-starter/issues"
+  },
+  "homepage": "https://github.com/eopol/pnpm-changeset-starter#readme"
+}
